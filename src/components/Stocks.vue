@@ -24,7 +24,9 @@ export default {
 <template>
   <div class="stock">
     <div class="stock-item" v-for="value in stock" :key="value.stock">
-      <img :src="value.image" :alt="value.companyName" />
+      <div class="stock-item__cover">
+        <img :src="value.image" :alt="value.companyName" />
+      </div>
 
       <h3 class="stock-item__title">
         {{ value.companyName }}
