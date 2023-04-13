@@ -1,0 +1,55 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+#app {
+  max-width: 1360px; /* 1280px; */
+  margin: 0 auto;
+  padding: 0 15px;
+  user-select: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+.stock {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.stock-item {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  display: flex;
+  align-items: center; /* justify-content: space-around; */
+  padding: 10px 15px; /* padding: 15px 20px; */
+}
+
+img {
+  flex: 0 0 30px;
+  margin-right: 10px;
+  width: 100%;
+}
+
+.stock-item__title {
+  flex: 1; /*allow take a rest*/
+  font-size: 18px;
+  margin: 0;
+}
+
+.stock-item__title span {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  color: #777;
+  margin-top: 2px;
+}
+
+.stock-item__price {
+  margin-left: auto; /* flex: 0 0 80px; */
+  padding-left: 5px;
+}
+
+.info {
+  margin-top: 20px;
+}
